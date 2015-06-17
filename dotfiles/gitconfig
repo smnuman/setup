@@ -39,4 +39,4 @@
 [push]
   default = current
 [core]
-  excludesfile = /Users/gerhard/.gitignore
+  excludesfile = /Users/argon/.gitignore
