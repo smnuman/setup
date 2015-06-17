@@ -22,8 +22,8 @@
   changed = green
   untracked = cyan
 [user]
-  name = Gerhard Lazu
-  email = gerhard@lazu.co.uk
+  name = Andrew Naylor
+  email = argon@mkbot.net
 [github]
   user = gitconfig
   token = token
