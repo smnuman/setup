@@ -1,0 +1,5 @@
+contact_info="Email: hello@andrewnaylor.co.uk
+Twitter: @argon
+Phone: +44 (0)7446916137"
+
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText -string "$contact_info"
