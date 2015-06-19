@@ -40,3 +40,5 @@
   default = current
 [core]
   excludesfile = /Users/argon/.gitignore
+[commit]
+  template = /Users/argon/.gitcommit
