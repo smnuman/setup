@@ -19,6 +19,8 @@ Plugin 'scrooloose/syntastic'
 
 Plugin 'scrooloose/nerdtree'
 
+Plugin 'rizzatti/dash.vim'
+
 Plugin 'kien/ctrlp.vim'
 " Ends certain structures automatically
 Plugin 'tpope/vim-endwise'
