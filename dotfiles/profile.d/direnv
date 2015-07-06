@@ -1,3 +1,4 @@
 #!/bin/bash
 
 ! which direnv >&- || eval "$(direnv hook bash)"
+alias e=direnv
