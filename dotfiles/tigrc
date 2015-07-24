@@ -3,6 +3,7 @@ bind main u !git pull
 bind main t !git revert %(commit)
 
 bind main B !git checkout -b "%(prompt Enter new branch name: )"
+bind refs B !git checkout -b "%(prompt Enter new branch name: )" %(ref)
 
 bind main p !git push
 bind main P !git push -f
