@@ -1,0 +1,24 @@
+#!/bin/bash -e
+
+main() {
+  BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  if set_upstream "$BRANCH"; then
+    git push -u
+  else
+    git push
+  fi
+}
+
+set_upstream() {
+  if [[ $(git config "branch.${1}.merge") = '' ]]; then
+    echo -n "Set upstream? [y/N]: "
+    read -r -n 1 answer
+    echo ""
+    if [[ $answer = 'y' ]]; then
+      return 0
+    fi
+  fi
+  return 1
+}
+
+main

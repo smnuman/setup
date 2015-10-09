@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+pushd "${BASE_PATH}/bin" >&-
+  for script in *
+  do
+    ln -nsf "${PWD}/${script}" "/usr/local/bin/${script}"
+  done
+popd >&-

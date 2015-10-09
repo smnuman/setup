@@ -5,9 +5,9 @@ bind main t !git revert %(commit)
 bind main B !git checkout -b "%(prompt Enter new branch name: )"
 bind refs B !git checkout -b "%(prompt Enter new branch name: )" %(ref)
 
-bind main p !git push
+bind main p !git push-tracking
 bind main P !git push -f
-bind status p !git push
+bind status p !git push-tracking
 bind status P !git push -f
 
 bind main { !git stash
