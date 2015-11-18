@@ -12,7 +12,7 @@ bind main u !git pull
 bind main t !git revert %(commit)
 bind main i !git rebase -i %(commit)
 
-bind main B !git checkout -b "%(prompt Enter new branch name: )"
+bind main B !git checkout -b "%(prompt Enter new branch name: )" %(commit)
 bind refs B !git checkout -b "%(prompt Enter new branch name: )" %(ref)
 
 bind main p !git push-tracking
