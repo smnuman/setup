@@ -1,0 +1,15 @@
+#!/bin/bash
+
+docker-machine-env() {
+  MACHINE_NAME="${1:-default}"
+  eval "$(docker-machine env "${MACHINE_NAME}")"
+}
+
+if which docker-machine >&-
+then
+  alias dm=docker-machine
+  alias dme=docker-machine-env
+
+  [[ $(docker-machine status default) = "Running" ]] && docker-machine-env default
+fi
+
