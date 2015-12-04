@@ -10,7 +10,7 @@ set line-graphics = utf-8
 bind main f !git fetch
 bind main u !git pull
 bind main t !git revert %(commit)
-bind main i !git rebase -i %(commit)
+bind main i !git rebase -i --preserve-merges %(commit)
 
 bind main B !git checkout -b "%(prompt Enter new branch name: )" %(commit)
 bind refs B !git checkout -b "%(prompt Enter new branch name: )" %(ref)
