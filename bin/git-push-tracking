@@ -3,9 +3,9 @@
 main() {
   BRANCH=$(git rev-parse --abbrev-ref HEAD)
   if set_upstream "$BRANCH"; then
-    git push -u
+    git push -u "$@"
   else
-    git push
+    git push "$@"
   fi
 }
 
@@ -21,4 +21,4 @@ set_upstream() {
   return 1
 }
 
-main
+main "$@"
