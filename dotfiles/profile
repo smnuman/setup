@@ -13,6 +13,8 @@ alias v=vagrant
 
 alias d=docker
 
+alias fixdns="sudo killall -HUP mDNSResponder"
+
 for profile_config in ${HOME}/.profile.d/*
 do
   . "$profile_config"
