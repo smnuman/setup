@@ -7,7 +7,7 @@ set refresh-mode = auto
 # Rich graphics because it's not the 90s
 set line-graphics = utf-8
 
-bind main f !git fetch
+bind main f !git fetch -p
 bind main u !git pull
 bind main t !git revert %(commit)
 bind main i !git rebase -i --preserve-merges %(commit)
