@@ -12,8 +12,6 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 " A Git wrapper so awesome, it should be illegal
 Plugin 'tpope/vim-fugitive'
-" Lean & mean status/tabline for vim that's light as air
-Plugin 'bling/vim-airline'
 " Runs files through external syntax checkers and displays any resulting errors
 Plugin 'scrooloose/syntastic'
 
@@ -32,6 +30,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
 " Async build and test dispatcher
 Plugin 'tpope/vim-dispatch'
+" Status/tabline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " Perform all your vim insert mode completions with Tab
 Plugin 'ervandew/supertab'
 
