@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+alias g=git
+# tig, git's best companion
+alias t="tig --all"
+
+unpair() {
+  if which git >&-
+  then
+    pushd "$HOME/.setup" >&-
+      git checkout dotfiles/gitconfig
+    popd >&-
+  fi
+}

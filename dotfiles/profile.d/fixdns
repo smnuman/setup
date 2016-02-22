@@ -1,0 +1,3 @@
+#!/bin/bash -e
+
+alias fixdns="sudo killall -HUP mDNSResponder"

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export EDITOR=vim
+
+alias m=mvim
+alias v=vim
