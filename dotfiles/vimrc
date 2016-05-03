@@ -56,8 +56,11 @@ Plugin 'myusuf3/numbers.vim'
 Plugin 'ap/vim-css-color'
 " Syntax detection and highlighting for http://concourse.ci pipeline files
 Plugin 'luan/vim-concourse'
+" Develop Golang with joy
 Plugin 'fatih/vim-go'
+" The Vim class outline viewer
 Plugin 'majutsushi/tagbar'
+" Visualize your Vim undo tree
 Plugin 'sjl/gundo.vim'
 Plugin 'godlygeek/tabular'
 call vundle#end()
