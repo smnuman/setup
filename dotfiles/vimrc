@@ -177,6 +177,9 @@ let g:syntastic_html_tidy_ignore_errors=[
 " Comment lines
 noremap <Leader>/ :Commentary<CR>
 
+" Gundo mapping
+nnoremap <Leader>u :GundoToggle<CR>
+
 " Automatic formatting
 autocmd BufWritePre *.rb :%s/\s\+$//e
 autocmd BufWritePre *.haml :%s/\s\+$//e
