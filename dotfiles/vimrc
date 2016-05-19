@@ -38,15 +38,6 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'kien/ctrlp.vim'
 " Perform all your vim insert mode completions with Tab
 Plugin 'ervandew/supertab'
-
-Plugin 'fatih/vim-go'
-
-Plugin 'majutsushi/tagbar'
-
-Plugin 'sjl/gundo.vim'
-
-Plugin 'godlygeek/tabular'
-
 " Syntax highlighting, matching rules and mappings for the original Markdown
 Plugin 'plasticboy/vim-markdown'
 
@@ -60,6 +51,11 @@ Plugin 'tomasr/molokai'
 Plugin 'myusuf3/numbers.vim'
 " Highlight colours in files
 Plugin 'ap/vim-css-color'
+
+Plugin 'fatih/vim-go'
+Plugin 'majutsushi/tagbar'
+Plugin 'sjl/gundo.vim'
+Plugin 'godlygeek/tabular'
 call vundle#end()
 
 " display invisible characters
