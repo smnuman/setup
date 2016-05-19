@@ -11,5 +11,7 @@ then
   alias dme=docker-machine-env
 
   [[ $(docker-machine status dinghy) = "Running" ]] && docker-machine-env dinghy
+
+  true
 fi
 
