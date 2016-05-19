@@ -44,6 +44,9 @@ Plugin 'sjl/gundo.vim'
 Plugin 'godlygeek/tabular'
 
 Plugin 'plasticboy/vim-markdown'
+
+Plugin 'itspriddle/vim-marked'
+
 " Silver searcher, the ack replacement
 Plugin 'rking/ag.vim'
 " The one and only colour scheme
