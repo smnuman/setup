@@ -12,16 +12,9 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 " A Git wrapper so awesome, it should be illegal
 Plugin 'tpope/vim-fugitive'
-" Runs files through external syntax checkers and displays any resulting errors
-Plugin 'scrooloose/syntastic'
-
-" Search terms using Dash
-Plugin 'rizzatti/dash.vim'
-
 " Sexy sidebar
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'kien/ctrlp.vim'
 " Ends certain structures automatically
 Plugin 'tpope/vim-endwise'
 " Remaps . in a way that plugins can tap into
@@ -30,9 +23,19 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-commentary'
 " Async build and test dispatcher
 Plugin 'tpope/vim-dispatch'
+" Lightweight support for Ruby's bundler, including gem-ctags support
+Plugin 'tpope/vim-bundler'
+" Automatically generate ctags for rbenv Ruby stdlibs
+Plugin 'tpope/rbenv-ctags'
 " Status/tabline
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+" Check syntax on :w
+Plugin 'scrooloose/syntastic'
+" Dash integration
+Plugin 'rizzatti/dash.vim'
+" The one & only vim finder
+Plugin 'kien/ctrlp.vim'
 " Perform all your vim insert mode completions with Tab
 Plugin 'ervandew/supertab'
 
@@ -44,6 +47,7 @@ Plugin 'sjl/gundo.vim'
 
 Plugin 'godlygeek/tabular'
 
+" Syntax highlighting, matching rules and mappings for the original Markdown
 Plugin 'plasticboy/vim-markdown'
 
 Plugin 'itspriddle/vim-marked'
@@ -52,9 +56,6 @@ Plugin 'itspriddle/vim-marked'
 Plugin 'rking/ag.vim'
 " The one and only colour scheme
 Plugin 'tomasr/molokai'
-" Lightweight support for Ruby's bundler
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/rbenv-ctags'
 " Alternate between relative numbering and absolute numbering
 Plugin 'myusuf3/numbers.vim'
 " Highlight colours in files
