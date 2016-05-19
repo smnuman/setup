@@ -21,8 +21,6 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-repeat'
 " Comment stuff out
 Plugin 'tpope/vim-commentary'
-" Async build and test dispatcher
-Plugin 'tpope/vim-dispatch'
 " Lightweight support for Ruby's bundler, including gem-ctags support
 Plugin 'tpope/vim-bundler'
 " Automatically generate ctags for rbenv Ruby stdlibs
