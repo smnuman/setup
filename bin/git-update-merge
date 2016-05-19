@@ -1,0 +1,8 @@
+#!/bin/bash
+
+BRANCH=${1:?the branch to merge}
+
+git checkout ${BRANCH}
+git pull
+git checkout -
+git merge ${BRANCH}

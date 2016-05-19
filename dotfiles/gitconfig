@@ -7,6 +7,7 @@
   ca = !"git add -A && git commit -av"
   # Condensed log
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  um = update-merge
 [apply]
   # Detect whitespace errors when applying a patch
   whitespace = fix
