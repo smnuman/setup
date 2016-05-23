@@ -47,8 +47,6 @@ Plugin 'tomasr/molokai'
 Plugin 'myusuf3/numbers.vim'
 " Highlight colours in files
 Plugin 'ap/vim-css-color'
-" Syntax detection and highlighting for http://concourse.ci pipeline files
-Plugin 'luan/vim-concourse'
 " Develop Golang with joy
 Plugin 'fatih/vim-go'
 " The Vim class outline viewer
@@ -241,9 +239,6 @@ augroup reload_vimrc " {
   autocmd!
   autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END " }
-
-" Disable all folds when opening Concourse files
-au FileType concourse setlocal nofoldenable
 
 au BufRead,BufNewFile {Rakefile} set ft=ruby
 au BufRead,BufNewFile {Guardfile} set ft=ruby
