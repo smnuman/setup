@@ -37,9 +37,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
 " Syntax highlighting, matching rules and mappings for the original Markdown
 Plugin 'plasticboy/vim-markdown'
-
+" Use my preferred Markdown viewer
 Plugin 'itspriddle/vim-marked'
-
 " Silver searcher, the ack replacement
 Plugin 'rking/ag.vim'
 " The one and only colour scheme
