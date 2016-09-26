@@ -1,0 +1,17 @@
+#!/bin/bash -e
+
+if [ -z $APPLE_ID ]; then
+    read -p "Apple ID:" APPLE_ID
+fi
+
+if ! mas account >&-; then
+    mas signin --dialog "${APPLE_ID}"
+fi
+
+pushd "${BASE_PATH}/mas" >&-
+  for pkg in *
+  do
+    echo "Installing ${pkg}"
+    mas install "$(cat "${pkg}")"
+  done
+popd >&-
