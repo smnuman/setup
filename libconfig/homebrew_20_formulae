@@ -7,12 +7,8 @@ pushd "${BASE_PATH}/homebrew/formulae" >&-
   do
     if ! grep -qe "^$formula" < <(echo "$installed_formulae")
     then
-      if [ -z "$formula_options" ]
-      then
-        brew install "$formula"
-      else
-        brew install "$formula" "$formula_options"
-      fi
+      formula_options="$(cat "$formula")"
+      bash -c "brew install $formula $formula_options"
     fi
   done
 popd >&-
