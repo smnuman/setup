@@ -2,6 +2,6 @@
 
 which brew >&- || ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-pushd /usr/local >&-
+pushd /usr/local/Homebrew >&-
   git config pull.rebase true
 popd >&-
