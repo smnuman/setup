@@ -61,7 +61,7 @@ app_store_updates() {
     mas outdated | while read -r app_id_and_name
     do
       echo "Updating ${app_id_and_name##* }..."
-      mas install "${app_id_and_name%% *}"
+      mas upgrade "${app_id_and_name%% *}"
     done
   fi
 }
