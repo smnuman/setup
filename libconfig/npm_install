@@ -1,8 +1,0 @@
-#!/bin/bash -e
-
-pushd "${BASE_PATH}" >&-
-  for package in npm/*
-  do
-    npm install -g "${package#npm/}"
-  done
-popd >&-
