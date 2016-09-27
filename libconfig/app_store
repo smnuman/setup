@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
 if ! mas account >&-; then
-  if [ -z $APPLE_ID ]; then
-      read -p "Apple ID: " APPLE_ID
+  if [ -z "$APPLE_ID" ]; then
+      read -r -p "Apple ID: " APPLE_ID
   fi
   mas signin "${APPLE_ID}"
 fi
