@@ -1,4 +1,6 @@
-pushd "/tmp"
-  curl -L -O https://github.com/downloads/onsi/ShiftIt/ShiftIt.app.zip
-  unzip ShiftIt.app.zip ShiftIt.app/*  -d /Applications/
-popd
+if [ ! -d /Applications/ShiftIt.app ]; then
+  pushd "/tmp"
+    curl -L -O https://github.com/downloads/onsi/ShiftIt/ShiftIt.app.zip
+    unzip ShiftIt.app.zip ShiftIt.app/*  -d /Applications/
+  popd
+fi
