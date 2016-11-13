@@ -1,7 +1,7 @@
 #!/bin/bash
 
 docker-machine-env() {
-  MACHINE_NAME="${1:-dinghy}"
+  MACHINE_NAME="${1:-default}"
   eval "$(docker-machine env "${MACHINE_NAME}")"
 }
 
@@ -10,7 +10,7 @@ then
   alias dm=docker-machine
   alias dme=docker-machine-env
 
-  [[ $(docker-machine status dinghy) = "Running" ]] && docker-machine-env dinghy
+  # [[ $(docker-machine status default) = "Running" ]] && docker-machine-env default
 
   true
 fi
