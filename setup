@@ -37,7 +37,7 @@ apply_configs() {
   pushd "${BASE_PATH}/libconfig" >&-
     for config in *
     do
-      . "$config"
+      . "./$config"
     done
   popd >&-
 }
