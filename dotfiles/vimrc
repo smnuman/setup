@@ -40,7 +40,7 @@ Plugin 'plasticboy/vim-markdown'
 " Use my preferred Markdown viewer
 Plugin 'itspriddle/vim-marked'
 " Silver searcher, the ack replacement
-Plugin 'rking/ag.vim'
+Plugin 'mileszs/ack.vim'
 " The one and only colour scheme
 Plugin 'tomasr/molokai'
 " Alternate between relative numbering and absolute numbering
@@ -147,7 +147,10 @@ let g:ctrlp_working_path_mode = 'ra'
 " 0 or '' (empty string) - disable this feature
 
 " The Silver Searcher + CtrlP
-nnoremap \ :Ag<Space>
+nnoremap \ :Ack!<Space>
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 " Use ag over grep
 set grepprg=ag\ --nogroup\ --nocolor
 
